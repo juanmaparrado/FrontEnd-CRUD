@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+    
+}
+body{
+    background-color: #fff;
+}
+.row{
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 12px 12px 22px grey ;
+}
+img{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-sizing:content-box;
+}
+h1{
+    font-weight: bolder !important;
+}
+
+.btn{
+    border: none ;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    border-radius: 4px;
+    font-weight: bold ;
+}
+.btn:hover{
+    background-color: white;
+    border: black 1px solid;
+    color: black;
+   ;
+}
