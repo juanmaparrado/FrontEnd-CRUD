@@ -1,0 +1,21 @@
+*{
+    font-family: 'Ubuntu';
+  }
+  .col-lg-6{
+    box-shadow: 12px 12px 22px grey ;
+    border-radius: 30px;
+  }
+
+.btn{
+    border: none ;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    border-radius: 4px;
+    font-weight: bold ;
+  }
+  .btn:hover{
+    background-color: white;
+    border: black 1px solid;
+    color: black;
+  }
