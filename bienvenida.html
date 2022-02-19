@@ -23,7 +23,7 @@
         <!-- Sidebar -->
 
         <div class="bg-white" id="sidebar-wrapper">
-            <div class="sidebar-heading text-center py-4 primary-text fs-3 fw-bold text-uppercase border-bottom"><i
+            <div class="sidebar-heading text-center py-4 primary-text fs-3 pe-3 fw-bold text-uppercase border-bottom"><i
                     class="bx bx-meteor me-2"></i>JuanmaParrado</div>
             <div class="list-group list-group-flush my-3">
 
@@ -52,8 +52,6 @@
                         class="bx bx-power-off me-2"></i>Logout</a>
             </div>
         </div>
-
-       
 
         <!-- Contenido Central  -->
         <div id="page-content-wrapper">
@@ -97,7 +95,7 @@
                                     <th scope="col" width="50">#</th>
                                     <th scope="col">Productos</th>
                                     <th scope="col">Proveedor</th>
-                                    <th scope="col">Precio</th>
+                                    <th scope="col">Precio</th> 
                                 </tr>
                             </thead>
                             <tbody>
@@ -197,6 +195,68 @@
                 </div>
 
             </div>
+            <!-- BOTON Nuevo PEDIDO-->
+        <button type="button" class="btn btn-success" 
+        data-bs-toggle="modal" data-bs-target="#formularioProducto">NUEVO PEDIDO</button>
+        <!-- modal-->
+
+        <div class="modal fade" id="formularioProducto" tabindex="-1" aria-labelledby="formularioInsertar" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="formularioInsertar">Pedido nuevo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="modal-body">
+                <form method="post" action="" class="border border-primary p-4">
+                  <!-- introducción de nombre con efecto placeholder -->
+                  <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="nombre" name="nombre" 
+                      placeholder="Dame tu nombre" required>
+                      <label for="nombreHelp" class="form-label">Name *</label>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="tlf" name="tlf" 
+                    placeholder="Dame tu tlf" required>
+                    <label for="tlfHelp" class="form-label">Phone Number *</label>
+                </div>
+
+                  <div class=" mb-3">
+                      <label for="producto" class="form-label">Producto *:</label>
+                      <input type="number" min="1" max="12" class="form-control" id="producto" name="producto" aria-describedby="productoHelp" required> 
+                     
+                  </div>
+                  
+                  <div class="mb-3">
+                      <label for="provincia" class="form-label">Proveedor *:</label>
+                      <select class="form-select" aria-label="Selecciona proveedor"
+                       id="proveedor" name="proveedor">
+                          <option>--Selecciona proveedor</option>
+                          <option value="lg">LG</option>
+                          <option value="eaelectric">EA Electric</option>
+                          <option value="apple">Apple</option>
+                          <option value="bosch">Bosch</option>
+                          <option value="planeta">Planeta</option>
+                          <option value="Nothre">Nothre</option>
+                          <option value="gucci">Gucci</option>
+                          <option value="dior">Dior</option>
+                          <option value="zara">Zara</option>
+                          <option value="burgerking">Burger King</option>
+                      </select>
+                  </div>
+                    <div class="mb-3 form-check">
+                        <label class="form-check-label" for="envio">Envio urgente</label>
+                        <input type="checkbox" class="form-check-input" id="envio" name="envio">
+                    </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+              </div>                
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
     </div>
     
